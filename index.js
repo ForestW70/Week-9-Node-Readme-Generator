@@ -1,17 +1,20 @@
-// TODO: Include packages needed for this application
+// required modules
 const inquirer = require("inquirer");
 const generator = require("./utils/generateMarkdown")
 const fs = require("fs");
 
+// array of license choices.
 const licences = ['CC 4.0 ShareAlike', 'CC 4.0 NonCommercial', 'CC 4.0 NoDivatives', 'Eclipse Public License', 'Open Database License (ODbL)', 'Public Domain Dedication and License (PDDL)', 'IBM', 'MIT', 'The Unlicense', 'The Do What the Fuck You Want to Public License'];
+// I wrote all of my questions before realizing you wanted us to put it in an array as well, so i didnt feel like re-arranging it all.
 
 
+// main prompt function
 function init () {
     inquirer
         .prompt([
             {
                 type: 'confirm',
-                message: "The following prompts will ask you about certain aspects of your projects. It is recommended that you asnwer all prompts for the highest quality read me, however you may leave fields blank if their do not apply to your project, or if you choose to not expand upon default values. You feel me?",
+                message: "The following prompts will ask you about certain aspects of your projects. It is recommended that you answer all prompts for the highest quality read me, however you may leave fields blank if they do not apply to your project, or if you choose to not expand upon default values. You feel me?",
                 name: "intro",
             },
             {
@@ -93,17 +96,11 @@ function init () {
         ])
         .then(data => {
             const fileName = `${data.projTitle.toLowerCase().split(' ').join('')}readme.md`;
-
             writeToFile(fileName, data);
         });
 }
 
-
-
-
-
-
-// TODO: Create a function to write README file
+// write file function.
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generator(data), (err) =>
         err ? console.log(err) : console.log(`Success! you have created ${fileName}!`)
