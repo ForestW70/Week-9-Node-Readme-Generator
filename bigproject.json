@@ -1,0 +1,11 @@
+{
+	"gitHubName": "forestw70",
+	"email": "hexaforest@",
+	"projTitle": "big project",
+	"isEvil": false,
+	"projDesc": "its going to be a good project, no evil",
+	"installation": "npm start",
+	"usage": "make readmeeeeees for your thang",
+	"licence": "CC 4.0 NoDivatives",
+	"contributeIsDefault": true
+}
