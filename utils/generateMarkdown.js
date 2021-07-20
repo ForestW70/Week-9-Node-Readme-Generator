@@ -56,55 +56,55 @@ function generateMarkdown(data) {
 
 
   return `# ${data.realName} - ${data.projTitle}
-${data.license} - ${userLicense} - ${isEvil}
+  ${data.license} - ${userLicense} - ${isEvil}
 
-## Table of Contents:
-- [Project description](#project-description)
-- [Usage instructions](#usage-instructions)
-- [Project installation](#project-installation)
-- [Additional comments](#additional-comments)
-- [Contribution information](#contribution-information)
-- [Questions](#questions-or-concerns)
-
-
-### About This Project
-
-* # Project description:
-  ${data.projDesc}
-
-* # Usage instructions
-  ${data.usage}
-
-* # Project installation
-  ${data.installation}
-     
-* # Additional comments
-  ${data.comments}
+  ## Table of Contents:
+  - [Project description](#project-description)
+  - [Usage instructions](#usage-instructions)
+  - [Project installation](#project-installation)
+  - [Additional comments](#additional-comments)
+  - [Contribution information](#contribution-information)
+  - [Questions](#questions-or-concerns)
 
 
-#### Contribution information 
+  ### About This Project
 
-- ${contribute}
+  * # Project description:
+    ${data.projDesc}
 
-###### Questions or concerns? 
-* Please contact me at one of the following!
+  * # Usage instructions
+    ${data.usage}
 
-  Email - ${data.email}
-  gitHub - https://github.com/${data.gitHubName}/
+  * # Project installation
+    ${data.installation}
+      
+  * # Additional comments
+    ${data.comments}
+
+
+  #### Contribution information 
+
+  - ${contribute}
+
+  ###### Questions or concerns? 
+  * Please contact me at one of the following!
+
+    Email - ${data.email}
+    gitHub - https://github.com/${data.gitHubName}/
 
 
 
 
-# Extras
-* Screenshots:
-  ![](${data.screenshot})
+  # Extras
+  * Screenshots:
+    ![](${data.screenshot})
 
-* Demo:
-  [App demo](${data.demo})
+  * Demo:
+    [App demo](${data.demo})
 
-* Links:
-  [Repo page](${data.repo})
-`;
+  * Links:
+    [Repo page](${data.repo})
+  `;
 }
 
 // export
