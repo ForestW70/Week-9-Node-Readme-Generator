@@ -3,6 +3,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 <!-- Original deployment date: April 27th, 2021 -->
 
 ## Table of Contents:
+- [This week's concepts](#this-weeks-concepts)
 - [Tech used](#tech-used)
 - [Project description](#project-description)
 - [Usage instructions](#usage-instructions)
@@ -10,11 +11,17 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 - [Additional comments](#additional-comments)
 - [Contribution information](#contribution-information)
 - [Questions](#questions-or-concerns)
-- [Extras](#extras)
+- [Pictures, Links](#extras)
 
 
 ### About This Project
 
+* # This weeks concepts:
+  1. Node.js
+  2. Npm packages
+  3. Package/package.lock
+  4. Exports/require
+  
 * # Tech used:
   1. JavaScript
   2. Node.js
@@ -22,7 +29,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   4. Inquirer
 
 * # Project description:
-  This node application uses the inquirer package to prompt the user with a few questions in the terminal, and then uses those input values to generate a professional readme markdown file for any of your new projects. You may input a handfull of useful things such as desired licence,  project info, and contact info.
+  Given a need for new readme files every week, I built a readme generator that runs in Node.js, where you are prompted to fill out some fields in the terminal, and once you are finished, a new markdown file is generated for you.
 
 * # Usage instructions
   This application is meant to create a quick, professional read me file for your new projects.
@@ -34,7 +41,9 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   4. Enjoy.
      
 * # Additional comments
-  It was tedious to test this app and to find resources like a full list of licenses to use, but I thought that the examples of code already in the project were good places to start and helped me figure out how to go about certain parts of it. I wasnt sure what we were supposed to put in the "tests" segment. I also would have liked to figure out how to create different paths of questions based on the response from another question, but I didn't have time to figure this out.
+(Apr/27/21)
+
+  - It was tedious to test this app and to find resources like a full list of licenses to use, but I thought that the examples of code already in the project were good places to start and helped me figure out how to go about certain parts of it. I wasnt sure what we were supposed to put in the "tests" segment. I also would have liked to figure out how to create different paths of questions based on the response from another question, but I didn't have time to figure this out.
 
 
 #### Contribution information 
