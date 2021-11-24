@@ -65,4 +65,4 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   [App demo](https://youtu.be/SuuVYTpCeO4)
 
 * Links:
-  [Repo page](https://github.com/ForestW70/hw9nodereadmegenerator)
+  [Repo page](https://github.com/ForestW70/Week-9-Node-Readme-Generator)
